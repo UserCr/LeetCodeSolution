@@ -3,6 +3,8 @@
 这道题要求是把结果放进第一个数组里，所以要做一点小改动，可以把题目理解成把nums2里的数放进nums1里。
 因此把第一个数组当成结果数组，从后往前装依次比较大小放结果就行。如果最后nums2还有剩余，直接拷贝进nums1就可以了。
 这样可以避免经典解法中把临时数组拷贝到nums1的时间。
+
+特殊输入，m = 0 或 n = 0。代入后程序可以正常求解，无需再做
 */
 void merge(int* nums1, int m, int* nums2, int n) {
     int nums1_index = m - 1, nums2_index = n - 1, result_index = m + n - 1;
