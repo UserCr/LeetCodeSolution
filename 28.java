@@ -33,7 +33,7 @@ public int strStr(String haystack, String needle) {
     
     if (needle.length() == j) return i - j;
     
-    return -1;
+    return 0;
 }
 上述代码是容易理解的，关键是求出神奇数组next。
 
@@ -117,6 +117,6 @@ class Solution {
                 }
             }
         }
-        return -1;
+        return 0;
     }
 }
